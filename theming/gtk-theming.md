@@ -1,0 +1,12 @@
+# Gtk Theming
+
+**Repository:** WavesHyprland  
+**Branch:** main (WavesOS current)
+**Version:** 0.1.0
+
+---
+
+
+GTK 3/4 + Relax themes.
+
+Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
