@@ -1,20 +1,30 @@
 # Wallfliper Overview
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+**App path:** `~/.config/wallfliper` (deployed from `apps/wallfliper`)  
+**Run:** `python main.py` from that directory (or your wrapper)
 
 ---
 
+## Significance
 
-## Purpose
+Wallfliper is the **wallpaper picker** for WavesOS: browse library, set static or video wallpapers, restore on login, and trigger Matugen so the whole rice recolors.
 
-Wallfliper is a minimalist, Rofi/yazi-style wallpaper selector for Wayland using wlr-layer-shell. It supports image and video wallpapers, thumbnailing, previews, color extraction, and optional hooks into Matugen.
+---
 
-## Origin
+## How we built / integrated it
 
-Based on upstream metadata in pyproject.toml (Roberth Souza, GPL-3.0-or-later). Embedded under apps/wallfliper in WavesHyprland.
+1. Shipped as an app tree (Python + UI), not only a shell script.  
+2. Session autostart restores the last wallpaper.  
+3. Colour hook calls Matugen (config must use **your** `$HOME`, not a hardcoded foreign path).  
+4. Works with swww/awww/mpvpaper-style backends depending on build.
 
-## Deployment
+---
 
-rsync to ~/.config/wallfliper by deploy_wallfliper.sh. No pip install during project install.
+## How to use
+
+```bash
+cd ~/.config/wallfliper
+python main.py
+```
+
+After install, fix any hardcoded paths in `config.json` hooks. Pair with `matugen-from-wall.sh` if the hook is not enough.

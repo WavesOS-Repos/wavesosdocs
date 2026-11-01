@@ -1,11 +1,7 @@
-# Svg Generation
+# Fuyue SVG generation
 
-**Project:** WavesHyprland  
-**Version:** 0.1.0  
-**Branch:** main (WavesOS current)
+**Script:** `~/.config/eww/scripts/fuyue-day-svg.sh` (name may vary)
 
----
+Generates a dated SVG (day number) with gradient fill using the current Matugen primary colour and a display font (e.g. Gunplay). EWW embeds the SVG path as an image widget.
 
-fuyue-day-svg.sh and related.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Regenerate when the day changes (poll/interval in yuck) or on theme reload.

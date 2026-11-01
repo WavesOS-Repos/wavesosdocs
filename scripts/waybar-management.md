@@ -1,12 +1,8 @@
-# Waybar Management
+# Waybar management scripts
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+| Script | Role |
+|--------|------|
+| `waybar-layout.sh` | Pick layout; update symlinks |
+| `waybar-reload.sh` | Restart/reload Waybar (avoid duplicate bars) |
 
----
-
-
-waybar-reload.sh, waybar-layout.sh.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Always kill existing Waybar before starting a new instance on reload.

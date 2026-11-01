@@ -1,11 +1,7 @@
-# Rock
+# Rock Widget
 
-**Project:** WavesHyprland  
-**Version:** 0.1.0  
-**Branch:** main (WavesOS current)
+**Window name:** `rock`
 
----
+Compact date/time style widget. Integrated with Matugen colours and the same switcher/watchdog path as Antares and Fuyue.
 
-Rock widget variant.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Open: `eww open rock`

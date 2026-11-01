@@ -1,12 +1,13 @@
-# Qylock
+# qylock (SDDM)
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+**Source in rice:** `apps/qylock`  
+**Helper:** `sddm.sh` for selecting themes  
+**Installer:** deploys themes system-wide and can set a default (e.g. Clockwork)
 
 ---
 
+## Significance
 
-Theme collection and sddm.sh.
+Login screen branding for WavesOS. In-session keybind can open the theme picker in a floating terminal.
 
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Hyprlock remains the **session lock**; qylock themes target **SDDM** login.

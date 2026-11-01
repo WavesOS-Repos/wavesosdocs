@@ -1,14 +1,39 @@
-# Window Rules
+# Window Rules (WavesOS floating tools)
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+**File:** `configs/hypr/configs/windowrules.lua`
 
 ---
 
+## Significance
 
-## Source
+Floating, centered windows make the **terminal tools** (settings, keybind editor, plugins, autostart, qylock picker) feel like small apps without a custom toolkit UI.
 
-configs/hypr/configs/windowrules.lua
+---
 
-Defines rules for floating, opacity, workspace assignment, and application-specific behavior (including Thunar opacity expectations mentioned in project README rules).
+## Patterns we use
+
+```lua
+hl.window_rule({
+    name = "hypr-settings",
+    match = { class = "hypr-settings" },
+    float = true,
+    center = true,
+    size = "900 600",
+})
+```
+
+Common classes:
+
+| Class | Tool |
+|-------|------|
+| `hypr-settings` | settings.sh |
+| `hypr-keybinds` | keybind-editor.sh |
+| `hypr-plugins` | hypr-plugins.sh |
+| `hypr-autostart` | autostart-editor.sh |
+| `qylock-sddm` | SDDM theme picker terminal |
+| `floating-terminal` | Super+Shift+Return Kitty |
+| `editor` / `yazi` | Floating editor / yazi |
+
+Thunar (and similar) may use opacity/transparency rules so the file manager matches the rice.
+
+Launch tools with `kitty --class <name> -e <script>` so rules match.

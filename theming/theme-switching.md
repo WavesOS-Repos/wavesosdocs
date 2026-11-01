@@ -1,12 +1,28 @@
-# Theme Switching
+# Theme Switching (dark / light)
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+**Script:** `~/.config/hypr/scripts/theme-switch.sh`
 
 ---
 
+## Significance
 
-theme-switch.sh and Rofi selectors.
+Separates **toolkit theme** (GTK Relax light/dark, Kvantum, icons, gsettings color-scheme) from **Matugen dynamic colours**. Switching to light mode should not destroy Kitty/Matugen terminal colours.
 
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+---
+
+## How we built it
+
+1. Toggle or force paths refined during install (running the script twice can force “end on dark” when args were unreliable).  
+2. Applies Relax GTK + Kvantum light/dark variants and icon packs.  
+3. Users must avoid leaving Kitty `dark-theme.auto.conf` in place.  
+4. File manager (Thunar) follows GTK; Qt apps follow Kvantum/qt6ct.
+
+---
+
+## How to use
+
+```bash
+~/.config/hypr/scripts/theme-switch.sh
+```
+
+Bind to a key if desired. Installer post-step typically ends on a dark desktop for first impression.

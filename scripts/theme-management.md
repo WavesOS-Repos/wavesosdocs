@@ -1,12 +1,10 @@
-# Theme Management
+# Theme management scripts
 
-**Repository:** WavesHyprland  
-**Branch:** main (WavesOS current)
-**Version:** 0.1.0
+| Script | Role |
+|--------|------|
+| `theme-switch.sh` | Dark/light toolkit theme |
+| `matugen-from-wall.sh` | Regenerate Matugen palette from wallpaper |
+| `rofi_theme.sh` | Rofi menu style |
+| `waybar-layout.sh` | Waybar layout |
 
----
-
-
-theme-switch.sh.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+See theming/ and waybar/ and rofi/ pages for full usage.

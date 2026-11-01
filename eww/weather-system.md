@@ -1,11 +1,5 @@
-# Weather System
+# Weather scripts (EWW)
 
-**Project:** WavesHyprland  
-**Version:** 0.1.0  
-**Branch:** main (WavesOS current)
+Shell helpers under `~/.config/eww/scripts/` fetch and format weather for widgets (temperature, humidity, wind, icon line). Prefer **long-term reliable** HTTP APIs (e.g. Open-Meteo) over brittle scrapers.
 
----
-
-weather-fetch.sh, fuyue-weather.sh, weather-*.sh — verify JSON contracts at runtime.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Defpoll in yuck calls these scripts on an interval. Failures should degrade to a placeholder string, not crash EWW.

@@ -1,11 +1,8 @@
-# Antares
+# Antares Widget
 
-**Project:** WavesHyprland  
-**Version:** 0.1.0  
-**Branch:** main (WavesOS current)
+**Window name:** `antares`
 
----
+System-oriented widget (time, weather, resource lines depending on your yuck). Uses the same Matugen colour pipeline and weather scripts as Fuyue where shared.
 
-Antares window geometry bottom-left in inspected eww.yuck.
-
-Source of truth: repository files in the current release. Expand this page with deeper excerpts when maintaining the documentation library.
+Open: `eww open antares`  
+Prefer the widget switcher so only one of Antares/Fuyue/Rock is visible.
